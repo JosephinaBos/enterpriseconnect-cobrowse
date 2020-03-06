@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <title>Enterprise Connect</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <style>
         html,body {
-            background-color: #f1edeb;
+            background-color: white;
             -webkit-background-size: auto; /* For WebKit*/
             -moz-background-size: auto;    /* Mozilla*/
             -o-background-size: auto;      /* Opera*/
@@ -12,17 +13,22 @@
         }
 
         h1 {
-            color: #ea650d;
-            font-family: sans-serif;
+            color: white;
+            font-family: Roboto;
+            font-weight: medium;
+        }
+
+        .banner {
+            height: 300px;
+            background-image: url("https://www.enterpriseconnect.com/sites/default/files/420816_EC20-Orlando-Page-Hero_v2.png");
         }
 
         #form {
             margin-top: 100px;
-            border-radius: 25px;
             background-color: white;
             padding: 30px;
-            width: 400px;
-            height: 400px;
+            width: 100vw;
+            height: 300px;
 
         }
 
@@ -32,18 +38,24 @@
             top: 25px;
         }
 
-        .slabtexted {
-            margin-top: 150px;
+        .footer{
+            height: 100px;
         }
     </style>
 </head>
 
-<body class="slabtexted">
+<body>
     <center>
-        <h1>Welcome to Enterprise Connect Co-browsing</h1>
+        <div class="banner">
+            <h1>Welcome to Enterprise Connect Co-browsing</h1>
+        </div>
+
         <div id="form">
-            <img itemprop="logo" src="static/logo-nn.png" alt="NN®" style="width: 300px; margin-top: -75px;">
             <h2 id="sessidtarget" style="font-family: sans-serif;">Please wait...</h2>
+        </div>
+
+        <div id="footer">
+            <p>Powered by Surfly</p>
         </div>
 
 <script>
